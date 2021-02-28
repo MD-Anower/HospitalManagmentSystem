@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+       <class name="entity.Appointment" table="Appointment">              	 
+         	<id name="Id" column="Id">
+          		<generator class="native"></generator>
+          	</id>
+           
+          
+          <property name="FirstName" column="FirstName" type="string"></property>
+          <property name="LastName" column="LastName" type="string"></property>
+          <property name="FullAddress" column="FullAddress" type="string"></property>
+          <property name="CityName" column="CityName" type="string"></property>
+          <property name="PhnNumber" column="PhnNumber" type="string"></property>
+          <property name="Email" column="Email" type="string"></property>
+          <property name="DateOfBirth" column="DateOfBirth" type="string"></property>
+          <property name="AppointmentTime" column="AppointmentTime" type="string"></property>
+          <property name="ContactPerson" column="ContactPerson" type="string"></property>
+          <property name="BloodGroup" column="BloodGroup" type="string"></property>
+          <property name="Age" column="Age" type="string"></property>
+          <property name="Gender" column="Gender" type="string"></property>
+          <property name="SpecialMessage" column="SpecialMessage" type="string"></property>
+         
+       </class>
+</hibernate-mapping> 
